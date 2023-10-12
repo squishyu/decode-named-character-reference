@@ -8,10 +8,11 @@
 ### Modified version of [wooorm/decode-named-character-reference](https://github.com/wooorm/decode-named-character-reference)
 
 Fixes a specific use case when directly or indirectly importing this library
-from a web worker in a [Vite](https://vitejs.dev/) project by moving the module-level `document.createElement` statement
+from a web worker in a [Vite](https://vitejs.dev/) project
+by moving the module-level `document.createElement` statement
 into the main function.
 
----
+***
 
 Decode named character references.
 
