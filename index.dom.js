@@ -3,7 +3,8 @@
 /* eslint-env browser */
 
 // Start with a null element (so the module doesn't throw if document is undefined)
-let element = document?.createElement('i')
+let element =
+  typeof document === 'undefined' ? null : document.createElement('i')
 
 /**
  * @param {string} value
