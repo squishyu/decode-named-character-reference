@@ -2,13 +2,19 @@
 
 /* eslint-env browser */
 
-const element = document.createElement('i')
+// Start with a null element (so the module doesn't throw if document is undefined)
+let element = null
 
 /**
  * @param {string} value
  * @returns {string|false}
  */
 export function decodeNamedCharacterReference(value) {
+  if ( !element ) {
+    // Let the code throw an error here if being run on a server
+    element = document.createElement('i')
+  }
+
   const characterReference = '&' + value + ';'
   element.innerHTML = characterReference
   const char = element.textContent
