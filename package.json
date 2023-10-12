@@ -1,5 +1,5 @@
 {
-  "name": "decode-named-character-reference",
+  "name": "@squishyu/decode-named-character-reference",
   "version": "1.0.2",
   "description": "Decode named character references",
   "license": "MIT",
@@ -9,7 +9,10 @@
     "character",
     "references"
   ],
-  "repository": "wooorm/decode-named-character-reference",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/squishyu/decode-named-character-reference.git"
+  },
   "bugs": "https://github.com/wooorm/decode-named-character-reference/issues",
   "funding": {
     "type": "github",
@@ -17,6 +20,7 @@
   },
   "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
   "contributors": [
+    "squishyu <squishyu@squishyu.com> (https://squishyu.com)",
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
   ],
   "sideEffects": false,
