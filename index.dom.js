@@ -3,14 +3,14 @@
 /* eslint-env browser */
 
 // Start with a null element (so the module doesn't throw if document is undefined)
-let element = null
+let element = document?.createElement('i')
 
 /**
  * @param {string} value
  * @returns {string|false}
  */
 export function decodeNamedCharacterReference(value) {
-  if ( !element ) {
+  if (!element) {
     // Let the code throw an error here if being run on a server
     element = document.createElement('i')
   }
